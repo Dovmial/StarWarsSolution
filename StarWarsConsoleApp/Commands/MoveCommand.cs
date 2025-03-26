@@ -2,10 +2,10 @@
 
 namespace StarWarsConsoleApp.Commands
 {
-    public class Move
+    public class MoveCommand: ICommand
     {
         private IMovable _movableObject;
-        public Move(IMovable movableObject)
+        public MoveCommand(IMovable movableObject)
         {
             _movableObject = movableObject;
         }

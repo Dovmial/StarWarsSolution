@@ -1,20 +1,17 @@
 ﻿using StarWarsConsoleApp;
+using StarWarsConsoleApp.Adapters;
 using StarWarsConsoleApp.Commands;
+using StarWarsConsoleApp.Interfaces;
 using StarWarsConsoleApp.Models;
 
-Spaceship spaceship = new Spaceship()
-{
-    Position = new(12,5,0),
-    Velocity = new(-7,3,0)
-};
-Spaceship sp2 = new Spaceship();
-Move moveSpaceship = new(spaceship);
-Rotation rotationSpaceship = new(spaceship) { Angle = 10 };
-moveSpaceship.Execute();
-rotationSpaceship.Execute();
+Dictionary<string, IUObject> gameObjects = new();
+Queue<ICommand> commands = new();
 
-Move move2 = new(sp2);
-move2.Execute();
-Console.WriteLine(spaceship.Position.ToString());
-Console.WriteLine(sp2.Position.ToString());
-Console.WriteLine(spaceship.RotationAngle);
+IUObject spaceship = new Spaceship(new(12, 5, 0), new(-7, 3, 0));
+
+IMovable movableSpaceship = new MovableAdapter(spaceship);
+ICommand move = new MoveCommand(movableSpaceship);
+
+move.Execute();
+
+Console.WriteLine(spaceship.GetValue(nameof(IMovable.Position)));

@@ -3,11 +3,11 @@ using StarWarsConsoleApp.Interfaces;
 
 namespace StarWarsConsoleApp.Commands
 {
-    public class Rotation
+    public class RotateCommand: ICommand
     {
         private IRotatable _rotatableObject;
         public int Angle { get; set; }
-        public Rotation(IRotatable rotatableObject)
+        public RotateCommand(IRotatable rotatableObject)
         {
             _rotatableObject = rotatableObject;
         }

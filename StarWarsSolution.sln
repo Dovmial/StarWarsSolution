@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsConsoleApp", "StarW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{1E22111B-385A-45F4-999B-8FF39AC83F09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareEquation", "SquareEquation\SquareEquation.csproj", "{502EF699-6265-E960-51B6-7F8E28CE8627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSquareEquation", "TestSquareEquation\TestSquareEquation.csproj", "{248FF8CF-2DDB-FD62-2D7D-5DF177AE522B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +25,19 @@ Global
 		{1E22111B-385A-45F4-999B-8FF39AC83F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E22111B-385A-45F4-999B-8FF39AC83F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E22111B-385A-45F4-999B-8FF39AC83F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502EF699-6265-E960-51B6-7F8E28CE8627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502EF699-6265-E960-51B6-7F8E28CE8627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502EF699-6265-E960-51B6-7F8E28CE8627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502EF699-6265-E960-51B6-7F8E28CE8627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248FF8CF-2DDB-FD62-2D7D-5DF177AE522B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248FF8CF-2DDB-FD62-2D7D-5DF177AE522B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248FF8CF-2DDB-FD62-2D7D-5DF177AE522B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248FF8CF-2DDB-FD62-2D7D-5DF177AE522B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {087D8F9F-B969-4500-89DA-19E0C61C7804}
 	EndGlobalSection
 EndGlobal
